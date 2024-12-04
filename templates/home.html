@@ -10,7 +10,6 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
 <style>
-    /* General Styling */
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f7f6;
@@ -74,7 +73,6 @@
       background-color: #357ABD;
     }
 
-    /* Style the prediction text */
     .prediction {
     font-size: 34px;
     color: #333;
@@ -90,7 +88,6 @@
  <div class="login">
 	<h1>Boston House Price Prediction</h1>
 
-     <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
       <input type="text" name="CRIM" placeholder="CRIM" required="required" /><br>
     	<input type="text" name="ZN" placeholder="ZN" required="required" /><br>
@@ -111,9 +108,7 @@
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
-   <br>
-   <br>
-  
+   <br>  
    
  </div>
 
